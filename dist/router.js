@@ -64,14 +64,6 @@ router.get('/data', async (req, res) => {
             articles.push(article);
         }
     });
-    // $('tr').each((i, elem) => {
-    //      article = {
-    //         name: $(elem).find('a').text(),
-    //         image: $(elem).find('img').attr('src'),
-    //         link: $(elem).find('a').attr('href')
-    //     }
-    //     articles.push(article)
-    // })
     res.json(articles);
 });
 exports.default = router;
